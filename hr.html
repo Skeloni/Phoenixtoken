@@ -10,143 +10,109 @@
     <meta name="keywords" content="Phoenix Token, PXT, Participation Shares, Base, kripto ekosistem, pasivni prihod">
     
     <!-- FAVICON (Ikonica u tabu) -->
-    <link rel="icon" type="image/png" href="https://i.postimg.cc/pXGMqfqt/Screenshot-2026-06-13-194338.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="phoenix-logo-32.png">
 
     <!-- OPEN GRAPH / DRUŠTVENE MREŽE -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://phoenixtoken.net/">
+    <meta property="og:url" content="https://phoenixproject.community/hr">
     <meta property="og:title" content="Phoenix Token Ekosistem | Održivi Kripto & Participation Shares">
     <meta property="og:description" content="Otkrijte inovativni ekosistem fokusiran na održivost, pametno upravljanje nagradama i stabilan pasivan prihod.">
-    <meta property="og:image" content="https://i.postimg.cc/pXGMqfqt/Screenshot-2026-06-13-194338.png">
+    <meta property="og:image" content="phoenix-logo-160.png">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts (Poppins) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome za Ikone -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        // Konfiguracija unikatnih boja sa loga za Tailwind
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    },
-                    colors: {
-                        phoenixDark: '#0f141c',
-                        phoenixOrange: '#e05a16',
-                        glassBg: 'rgba(255, 255, 255, 0.03)',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Efekat stakla za moderne Web3 kartice */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        .glass-card:hover {
-            border-color: rgba(224, 90, 22, 0.3);
-            box-shadow: 0 0 25px rgba(224, 90, 22, 0.1);
-        }
-    </style>
+    <link rel="preload" href="fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="phoenix-logo-80.webp" as="image" type="image/webp">
 </head>
 <body class="bg-phoenixDark text-gray-200 font-sans antialiased overflow-x-hidden">
 
     <!-- NAVBAR -->
     <header class="fixed top-0 left-0 w-full z-50 bg-phoenixDark/80 backdrop-blur-md border-b border-white/5">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <img src="https://i.postimg.cc/pXGMqfqt/Screenshot-2026-06-13-194338.png" alt="Phoenix Logo" class="h-10 w-10 object-contain">
-                <span class="text-xl font-bold tracking-wider text-white">PHOENIX <span class="text-phoenixOrange">TOKEN</span></span>
+        <nav class="container mx-auto px-4 sm:px-6 py-3 lg:py-4 flex justify-between items-center gap-3">
+            <div class="flex items-center space-x-2 sm:space-x-3 shrink-0">
+                <picture>
+                    <source srcset="phoenix-logo-80.webp" type="image/webp">
+                    <img src="phoenix-logo-80.png" alt="Phoenix Logo" width="80" height="80" fetchpriority="high" class="h-12 w-12 sm:h-16 sm:w-16 lg:h-16 lg:w-16 2xl:h-20 2xl:w-20 object-contain shrink-0">
+                </picture>
+                <span class="text-base sm:text-lg lg:text-lg 2xl:text-xl font-bold tracking-wider text-white whitespace-nowrap">PHOENIX<span class="text-phoenixOrange">PROJECT</span></span>
             </div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
+
+            <div class="hidden lg:flex items-center space-x-3 xl:space-x-5 2xl:space-x-8 text-sm xl:text-base 2xl:text-lg font-medium whitespace-nowrap">
                 <a href="#presale" class="text-phoenixOrange font-bold hover:text-phoenixOrange transition">Pre-Sale 🔥</a>
-                <a href="#about" class="hover:text-phoenixOrange transition">O projektu</a>
-                <a href="#shares" class="hover:text-phoenixOrange transition">Participation Shares</a>
+                <a href="#about" class="hover:text-phoenixOrange transition">
+                    <span class="2xl:hidden">Projekt</span>
+                    <span class="hidden 2xl:inline">O projektu</span>
+                </a>
+                <a href="#shares" class="hover:text-phoenixOrange transition">
+                    <span class="2xl:hidden">Shares</span>
+                    <span class="hidden 2xl:inline">Participation Shares</span>
+                </a>
                 <a href="#timeline" class="hover:text-phoenixOrange transition">Faze</a>
-                <a href="#calculator" class="hover:text-phoenixOrange transition">Kalkulator</a>
+                <a href="#calculator" class="hover:text-phoenixOrange transition">
+                    <span class="2xl:hidden">Kalk.</span>
+                    <span class="hidden 2xl:inline">Kalkulator</span>
+                </a>
                 <a href="#security" class="hover:text-phoenixOrange transition">Sigurnost</a>
             </div>
-            <div class="hidden md:flex items-center space-x-4 pl-4 border-l border-white/10">
-                <a href="https://t.me/PhoenixToken_Official_BALKAN" target="_blank" class="text-gray-400 hover:text-phoenixOrange transition"><i class="fab fa-telegram fa-lg"></i></a>
-                <a href="https://www.facebook.com/PhoenixTokenOfficial/" target="_blank" class="text-gray-400 hover:text-phoenixOrange transition"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="https://www.youtube.com/@PhoenixTokenOfficial" target="_blank" class="text-gray-400 hover:text-phoenixOrange transition"><i class="fab fa-youtube fa-lg"></i></a>
+
+            <div class="hidden lg:flex items-center space-x-3 2xl:space-x-4 pl-3 2xl:pl-4 border-l border-white/10 shrink-0">
+                <a href="https://t.me/PhoenixProject_Official_BALKAN" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="text-gray-300 hover:text-phoenixOrange transition"><svg width="20" height="20" class="w-5 h-5" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                <a href="https://www.facebook.com/ProjectPhoenixOfficial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-gray-300 hover:text-phoenixOrange transition"><svg width="20" height="20" class="w-5 h-5" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="https://www.youtube.com/@PhoenixProject_Official" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-gray-300 hover:text-phoenixOrange transition"><svg width="20" height="20" class="w-5 h-5" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
             </div>
-            <!-- Language Switcher -->
-            <div class="flex items-center space-x-2 bg-white/5 px-3 py-1.5 rounded-md text-xs font-semibold border border-white/10">
+
+            <div class="hidden lg:flex items-center space-x-2 bg-white/5 px-3 py-1.5 rounded-md text-xs font-semibold border border-white/10 shrink-0">
                 <span class="text-phoenixOrange">HR</span>
                 <span class="text-gray-500">|</span>
                 <a href="/" class="text-gray-400 hover:text-white transition">EN</a>
             </div>
+
+            <button id="mobileMenuBtn" type="button" class="lg:hidden text-white p-2 hover:text-phoenixOrange transition" aria-label="Otvori izbornik" aria-expanded="false" aria-controls="mobileMenu">
+                <svg id="mobileMenuIcon" width="24" height="24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path id="menuIconOpen" stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
+                    <path id="menuIconClose" class="hidden" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/>
+                </svg>
+            </button>
         </nav>
+
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-white/5 bg-phoenixDark/95 backdrop-blur-md">
+            <div class="container mx-auto px-4 sm:px-6 py-6 space-y-4">
+                <a href="#presale" class="mobile-nav-link block text-phoenixOrange font-bold text-lg">Pre-Sale 🔥</a>
+                <a href="#about" class="mobile-nav-link block text-white hover:text-phoenixOrange transition text-lg">O projektu</a>
+                <a href="#shares" class="mobile-nav-link block text-white hover:text-phoenixOrange transition text-lg">Participation Shares</a>
+                <a href="#timeline" class="mobile-nav-link block text-white hover:text-phoenixOrange transition text-lg">Faze</a>
+                <a href="#calculator" class="mobile-nav-link block text-white hover:text-phoenixOrange transition text-lg">Kalkulator</a>
+                <a href="#security" class="mobile-nav-link block text-white hover:text-phoenixOrange transition text-lg">Sigurnost</a>
+                <div class="flex items-center space-x-6 pt-4 border-t border-white/10">
+                    <a href="https://t.me/PhoenixProject_Official_BALKAN" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="text-gray-300 hover:text-phoenixOrange transition"><svg width="20" height="20" class="w-5 h-5" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                    <a href="https://www.facebook.com/ProjectPhoenixOfficial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-gray-300 hover:text-phoenixOrange transition"><svg width="24" height="24" class="w-6 h-6" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="https://www.youtube.com/@PhoenixProject_Official" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-gray-300 hover:text-phoenixOrange transition"><svg width="24" height="24" class="w-6 h-6" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                </div>
+                <div class="flex items-center space-x-2 bg-white/5 px-3 py-1.5 rounded-md text-xs font-semibold border border-white/10 w-fit">
+                    <span class="text-phoenixOrange">HR</span>
+                    <span class="text-gray-500">|</span>
+                    <a href="/" class="text-gray-400 hover:text-white transition">EN</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- HERO SEKCIJA -->
-    <section id="about" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(224,90,22,0.12),transparent_45%)]"></div>
-        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
-            <div class="space-y-6 text-center md:text-left">
-                <div class="inline-flex items-center space-x-2 bg-phoenixOrange/10 border border-phoenixOrange/20 px-4 py-1.5 rounded-full text-phoenixOrange text-sm font-semibold">
-                    <span>🔥 Novi Održivi Ekosistem</span>
-                </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
-                    Kreiramo dugoročnu <br>vrijednost za <span class="text-phoenixOrange">zajednicu</span>
-                </h1>
-                <p class="text-gray-400 text-lg max-w-xl mx-auto md:mx-0">
-                    Ponosno predstavljamo inovativnu platformu fokusiranu na održivost, pametno upravljanje nagradama (Smart Reward Management) i stabilan pasivan prihod.
-                </p>
-                <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-                    <a href="https://phoenixtoken.app/user/register" target="_blank" rel="noopener noreferrer" class="bg-phoenixOrange hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-phoenixOrange/20 text-center">
-                        Započni odmah
-                    </a>
-                    <a href="#calculator" class="glass-card hover:bg-white/5 text-white font-semibold px-8 py-4 rounded-xl transition text-center">
-                        Izračunaj Profit
-                    </a>
-                </div>
-            </div>
-            <div class="flex justify-center relative animate-pulse" style="animation-duration: 8s;">
-                <!-- Veliki centralni logo -->
-                <div class="absolute inset-0 bg-phoenixOrange/20 rounded-full filter blur-3xl w-72 h-72 mx-auto my-auto"></div>
-                <video autoplay loop muted playsinline class="w-full max-w-4xl mx-auto rounded-2xl shadow-[0_0_80px_rgba(224,90,22,0.5)] border border-white/10">
-                    <source src="video-phoenix-token.mp4" type="video/mp4">
-                    Tvoj browser ne podržava video format.
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <!-- MISSION STATEMENT -->
-    <section class="py-16">
-        <div class="container mx-auto px-6 max-w-3xl text-center">
-            <h2 class="text-2xl font-bold text-white mb-6">Zašto Phoenix Token?</h2>
-            <p class="text-gray-400 leading-relaxed mb-6">
-                Većina kripto projekata propada jer se fokusira isključivo na spekulaciju. Phoenix Token ekosistem mijenja pravila igre. Naš model nije baziran na pustim obećanjima, već na matematički predvidivim mehanizmima likvidnosti i održivom arbitražnom modelu. Mi ne gradimo samo token – mi gradimo finansijski sistem koji radi za tebe 24/7.
-            </p>
-        </div>
-    </section>
-
     <!-- PRE-SALE SEKCIJA -->
-    <section id="presale" class="py-24 relative bg-black/30 border-y border-white/5">
+    <section id="presale" class="pt-44 pb-24 scroll-mt-36 relative bg-black/30 border-y border-white/5">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(224,90,22,0.08),transparent_50%)]"></div>
-        <div class="container mx-auto px-6 max-w-4xl relative z-10">
+        <div class="container mx-auto px-6 max-w-4xl relative z-10 pt-4">
             
             <!-- Naslov sekcije -->
-            <div class="text-center mb-12">
+            <div class="text-center mb-16">
                 <div class="inline-flex items-center space-x-2 bg-phoenixOrange/10 border border-phoenixOrange/20 px-4 py-1.5 rounded-full text-phoenixOrange text-sm font-semibold mb-4">
                     <span>🔥 U TJEKU JE PRE-SALE</span>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">⭐️ PXT PRE-SALE PROMOCIJA ⭐️</h2>
+                <p class="text-3xl md:text-4xl font-bold text-white mb-4">⭐️ PXT PRE-SALE PROMOCIJA ⭐️</p>
                 <p class="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mb-2">
                     Imate priliku kupiti PXT token po fiksnoj cijeni od <span class="text-white font-bold underline">0.0001 USD</span>!
                 </p>
                 <p class="text-phoenixOrange font-semibold text-sm">
-                    PRE-SALE završava 30.08.2026. u 14:00 po našem vremenu.
+                    PRE-SALE završava 06.09.2026. u 12:00 po našem vremenu.
                 </p>
             </div>
 
@@ -169,31 +135,31 @@
                                 <td class="p-4 sm:p-5 text-center font-bold text-white">$50</td>
                                 <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">500,000 PXT</td>
                                 <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+5 paketa</td>
-                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
+                                <td class="p-4 sm:p-5 text-center text-green-300 font-bold">✓ ✅</td>
                             </tr>
                             <tr class="hover:bg-white/5 transition bg-white/[0.01]">
                                 <td class="p-4 sm:p-5 text-center font-bold text-white">$100</td>
                                 <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">1,000,000 PXT</td>
                                 <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+10 paketa</td>
-                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
+                                <td class="p-4 sm:p-5 text-center text-green-300 font-bold">✓ ✅</td>
                             </tr>
                             <tr class="hover:bg-white/5 transition">
                                 <td class="p-4 sm:p-5 text-center font-bold text-white">$200</td>
                                 <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">2,000,000 PXT</td>
                                 <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+20 paketa</td>
-                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
+                                <td class="p-4 sm:p-5 text-center text-green-300 font-bold">✓ ✅</td>
                             </tr>
                             <tr class="hover:bg-white/5 transition bg-white/[0.01]">
                                 <td class="p-4 sm:p-5 text-center font-bold text-white">$500</td>
                                 <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">5,000,000 PXT</td>
                                 <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+50 paketa</td>
-                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
+                                <td class="p-4 sm:p-5 text-center text-green-300 font-bold">✓ ✅</td>
                             </tr>
                             <tr class="hover:bg-white/5 transition">
                                 <td class="p-4 sm:p-5 text-center font-bold text-white">$1000</td>
                                 <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">10,000,000 PXT</td>
                                 <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+100 paketa</td>
-                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
+                                <td class="p-4 sm:p-5 text-center text-green-300 font-bold">✓ ✅</td>
                             </tr>
                         </tbody>
                     </table>
@@ -201,21 +167,68 @@
 
                 <!-- Dodatne napomene u Phoenix stilu -->
                 <div class="text-xs sm:text-sm text-gray-400 leading-relaxed bg-black/30 p-5 rounded-2xl border-l-4 border-phoenixOrange space-y-2 text-left">
-                    <p>🚀 <strong class="text-white">AIRDROP:</strong> Provodi se <strong class="text-phoenixOrange">30.08. u 14:00</strong> po našem vremenu na decentraliziranu adresu walleta u vašem profilu.</p>
+                    <p>🚀 <strong class="text-white">AIRDROP:</strong> Provodi se <strong class="text-phoenixOrange">06.09.2026. u 14:00</strong> po našem vremenu na decentraliziranu adresu walleta u vašem profilu.</p>
                     <p>💡 <strong class="text-white">Raspodjela sredstava:</strong> 90% ide u likvidnost; 10% za smartcontract, audit i marketing.</p>
                     <p>⚡ <em class="text-gray-300">Možete obaviti više kupnji! Više kupljenih tokena znači višu početnu cijenu na berzi kad se doda likvidnost!</em></p>
-                    <p class="pt-1 border-t border-white/5"><i class="fa-solid fa-circle-check text-phoenixOrange mr-1"></i> Svim članovima koji su kupili token u pre-sale prije objave ove promocije bonus paketi će biti dodani retroaktivno u narednih 48 sati.</p>
-                    <p><i class="fa-solid fa-circle-check text-phoenixOrange mr-1"></i> Sve potrebne podatke imamo tako da nema potrebe da kontaktirate support!</p>
                 </div>
 
                 <!-- Gumb za kupovinu / pristup -->
                 <div class="pt-2 text-center">
-                    <a href="https://app.phoenixtoken.net/user/register" target="_blank" rel="noopener noreferrer" class="inline-block bg-phoenixOrange hover:bg-orange-600 text-white font-bold px-10 py-4 rounded-xl transition shadow-lg shadow-phoenixOrange/30 text-base">
+                    <a href="https://phoenixproject.io/user/register" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#c94e12] hover:bg-[#a84310] text-white font-bold px-10 py-4 rounded-xl transition shadow-lg shadow-phoenixOrange/30 text-base">
                         Kupi Token / Pristupi Backofficeu
                     </a>
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <!-- HERO SEKCIJA -->
+    <section id="about" class="relative py-20 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(224,90,22,0.12),transparent_45%)]"></div>
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center space-x-2 bg-phoenixOrange/10 border border-phoenixOrange/20 px-4 py-1.5 rounded-full text-phoenixOrange text-sm font-semibold">
+                    <span>🔥 Novi Održivi Ekosistem</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+                    Kreiramo dugoročnu <br>vrijednost za <span class="text-phoenixOrange">zajednicu</span>
+                </h1>
+                <p class="text-gray-400 text-lg max-w-xl mx-auto md:mx-0">
+                    Ponosno predstavljamo inovativnu platformu fokusiranu na održivost, pametno upravljanje nagradama (Smart Reward Management) i stabilan pasivan prihod.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="https://phoenixproject.io/user/register" target="_blank" rel="noopener noreferrer" class="bg-[#c94e12] hover:bg-[#a84310] text-white font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-phoenixOrange/20 text-center">
+                        Započni odmah
+                    </a>
+                    <a href="#calculator" class="glass-card hover:bg-white/5 text-white font-semibold px-8 py-4 rounded-xl transition text-center">
+                        Izračunaj Profit
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center relative">
+                <div class="absolute inset-0 bg-phoenixOrange/20 rounded-full filter blur-3xl w-72 h-72 mx-auto my-auto" aria-hidden="true"></div>
+                <div class="relative w-full max-w-4xl mx-auto">
+                    <video id="heroVideo" muted playsinline preload="none" poster="video-poster.webp" class="w-full rounded-2xl shadow-[0_0_80px_rgba(224,90,22,0.5)] border border-white/10">
+                        <track kind="captions" src="video-captions-hr.vtt" srclang="hr" label="Hrvatski" default>
+                    </video>
+                    <button type="button" id="videoPlayBtn" class="absolute inset-0 flex items-center justify-center rounded-2xl bg-black/30 hover:bg-black/40 transition group" aria-label="Pokreni video">
+                        <span class="w-16 h-16 rounded-full bg-phoenixOrange/90 group-hover:bg-phoenixOrange flex items-center justify-center shadow-lg">
+                            <svg width="28" height="28" class="w-7 h-7 text-white ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION STATEMENT -->
+    <section class="py-12">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Zašto Phoenix Token?</h2>
+            <p class="text-gray-400 leading-relaxed mb-6">
+                Većina kripto projekata propada jer se fokusira isključivo na spekulaciju. Phoenix Token ekosistem mijenja pravila igre. Naš model nije baziran na pustim obećanjima, već na matematički predvidivim mehanizmima likvidnosti i održivom arbitražnom modelu. Mi ne gradimo samo token – mi gradimo finansijski sistem koji radi za tebe 24/7.
+            </p>
         </div>
     </section>
 
@@ -230,25 +243,25 @@
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- Prvi Rent -->
                 <div class="glass-card p-8 rounded-2xl transition relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 bg-phoenixOrange/20 text-phoenixOrange px-4 py-1 text-xs font-bold rounded-bl-xl">Faza 1</div>
+                    <div class="absolute top-0 right-0 bg-[#c94e12] text-white px-4 py-1 text-xs font-bold rounded-bl-xl">Faza 1</div>
                     <h3 class="text-xl font-semibold text-white mb-2">Prvi Najam (First Time Rent)</h3>
                     <div class="text-4xl font-bold text-white my-4">$25 <span class="text-sm font-normal text-gray-400">/ po paketu</span></div>
                     <ul class="space-y-3 text-gray-400 text-sm mb-8">
-                        <li><i class="fa-solid fa-check text-phoenixOrange mr-2"></i> Aktivacija u roku od 24 sata</li>
-                        <li><i class="fa-solid fa-check text-phoenixOrange mr-2"></i> 89 dana aktivne proizvodnje</li>
-                        <li><i class="fa-solid fa-check text-phoenixOrange mr-2"></i> Maksimalno 2,000 paketa po nalogu</li>
+                        <li><svg width="16" height="16" class="w-4 h-4 inline-block text-phoenixOrange mr-2" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z" clip-rule="evenodd"/></svg> Aktivacija u roku od 24 sata</li>
+                        <li><svg width="16" height="16" class="w-4 h-4 inline-block text-phoenixOrange mr-2" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z" clip-rule="evenodd"/></svg> 89 dana aktivne proizvodnje</li>
+                        <li><svg width="16" height="16" class="w-4 h-4 inline-block text-phoenixOrange mr-2" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z" clip-rule="evenodd"/></svg> Maksimalno 2,000 paketa po nalogu</li>
                     </ul>
                 </div>
                 
                 <!-- Obnova -->
                 <div class="glass-card p-8 rounded-2xl transition relative overflow-hidden group border-phoenixOrange/40">
-                    <div class="absolute top-0 right-0 bg-green-500/20 text-green-400 px-4 py-1 text-xs font-bold rounded-bl-xl">Popust</div>
+                    <div class="absolute top-0 right-0 bg-green-700 text-white px-4 py-1 text-xs font-bold rounded-bl-xl">Popust</div>
                     <h3 class="text-xl font-semibold text-white mb-2">Obnova (Renewal)</h3>
                     <div class="text-4xl font-bold text-phoenixOrange my-4">$20 <span class="text-sm font-normal text-gray-400 text-white">/ po paketu</span></div>
                     <ul class="space-y-3 text-gray-400 text-sm mb-8">
-                        <li><i class="fa-solid fa-bolt text-phoenixOrange mr-2"></i> Instant aktivacija paketa</li>
-                        <li><i class="fa-solid fa-check text-phoenixOrange mr-2"></i> 90 dana aktivne proizvodnje</li>
-                        <li><i class="fa-solid fa-check text-phoenixOrange mr-2"></i> Ušteda od $5 po svakoj obnovi</li>
+                        <li><svg width="16" height="16" class="w-4 h-4 inline-block text-phoenixOrange mr-2" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path d="M11.3 1.046a1 1 0 0 1 .7 1.255l-1.2 4.8h4.2a1 1 0 0 1 .78 1.63l-8 10.5a1 1 0 0 1-1.78-.7l1.2-4.8H3.3a1 1 0 0 1-.78-1.63l8-10.5a1 1 0 0 1 1.08-.335z"/></svg> Instant aktivacija paketa</li>
+                        <li><svg width="16" height="16" class="w-4 h-4 inline-block text-phoenixOrange mr-2" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z" clip-rule="evenodd"/></svg> 90 dana aktivne proizvodnje</li>
+                        <li><svg width="16" height="16" class="w-4 h-4 inline-block text-phoenixOrange mr-2" aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L8 12.586l7.293-7.293a1 1 0 0 1 1.414 0z" clip-rule="evenodd"/></svg> Ušteda od $5 po svakoj obnovi</li>
                     </ul>
                 </div>
             </div>
@@ -275,18 +288,18 @@
             <h2 class="text-3xl font-bold text-white mb-8">Kako ostvariti pasivni prihod?</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="glass-card p-6 rounded-2xl">
-                    <div class="text-phoenixOrange mb-4"><i class="fa-solid fa-wallet text-3xl"></i></div>
-                    <h4 class="text-white font-bold mb-2">Rewards</h4>
+                    <div class="text-phoenixOrange mb-4"><svg width="32" height="32" class="w-8 h-8 mx-auto" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18 0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3"/></svg></div>
+                    <h3 class="text-white font-bold mb-2">Rewards</h4>
                     <p class="text-xs text-gray-400">Dnevni profit koji možete direktno povući ili reinvestirati za brži rast.</p>
                 </div>
                 <div class="glass-card p-6 rounded-2xl">
-                    <div class="text-phoenixOrange mb-4"><i class="fa-solid fa-ticket text-3xl"></i></div>
-                    <h4 class="text-white font-bold mb-2">Vouchers</h4>
+                    <div class="text-phoenixOrange mb-4"><svg width="32" height="32" class="w-8 h-8 mx-auto" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75M4.5 6h15a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5v-9A1.5 1.5 0 0 1 4.5 6z"/></svg></div>
+                    <h3 class="text-white font-bold mb-2">Vouchers</h4>
                     <p class="text-xs text-gray-400">Specijalni balans za pokrivanje troškova paketa vaših članova i daljnje širenje mreže.</p>
                 </div>
                 <div class="glass-card p-6 rounded-2xl">
-                    <div class="text-phoenixOrange mb-4"><i class="fa-solid fa-chart-line text-3xl"></i></div>
-                    <h4 class="text-white font-bold mb-2">Staking</h4>
+                    <div class="text-phoenixOrange mb-4"><svg width="32" height="32" class="w-8 h-8 mx-auto" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/></svg></div>
+                    <h3 class="text-white font-bold mb-2">Staking</h4>
                     <p class="text-xs text-gray-400">Dugoročno ulaganje uz kamatu od 4% godišnje u centralizovanom poolu.</p>
                 </div>
             </div>
@@ -302,7 +315,7 @@
             <div class="relative w-full overflow-hidden rounded-2xl shadow-[0_0_50px_rgba(224,90,22,0.2)] border border-white/10" style="padding-top: 56.25%;">
                 <iframe 
                     class="absolute top-0 left-0 w-full h-full" 
-                    src="https://www.youtube.com/embed/7vo2y4Jhjh0" 
+                    src="https://www.youtube-nocookie.com/embed/7vo2y4Jhjh0?rel=0" loading="lazy" 
                     title="Phoenix Token Webinar" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -325,8 +338,10 @@
                         <h2 class="text-3xl font-bold text-white mb-4">Kalkulator Profita</h2>
                         <p class="text-sm text-gray-400 mb-6">Unesite broj planiranih Participation Share paketa da vidite procjenu dnevnih prihoda u prvoj fazi.</p>
                         
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Broj paketa (Maks. 2000):</label>
-                        <input type="number" id="shareCount" value="10" min="1" max="2000" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white font-bold focus:outline-none focus:border-phoenixOrange transition">
+                        <form onsubmit="event.preventDefault()">
+                            <label for="shareCount" class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Broj paketa (Maks. 2000):</label>
+                            <input type="number" id="shareCount" name="shareCount" value="10" min="1" max="2000" class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white font-bold focus:outline-none focus:border-phoenixOrange transition">
+                        </form>
                     </div>
                     
                     <div class="bg-black/30 p-6 rounded-2xl border border-white/5 space-y-4">
@@ -336,13 +351,13 @@
                         </div>
                         <div class="flex justify-between items-center border-b border-white/5 pb-2">
                             <span class="text-xs text-gray-400 uppercase font-semibold">Dnevni Pasivni Balans:</span>
-                            <span id="calcDaily" class="text-lg font-bold text-green-400">+$5.00</span>
+                            <span id="calcDaily" class="text-lg font-bold text-green-300">+$5.00</span>
                         </div>
                         <div class="flex justify-between items-center">
                             <span class="text-xs text-gray-400 uppercase font-semibold">Mjesečna Nagrada:</span>
                             <span id="calcMonthly" class="text-xl font-bold text-phoenixOrange">+$150.00</span>
                         </div>
-                        <p class="text-[10px] text-gray-500 text-center pt-2">*Kalkulacija je informativnog karaktera bazirana na $0.50 dnevno po paketu.</p>
+                        <p class="text-xs text-gray-400 text-center pt-2">*Kalkulacija je informativnog karaktera bazirana na $0.50 dnevno po paketu.</p>
                     </div>
                 </div>
             </div>
@@ -363,7 +378,7 @@
                     <div class="absolute left-4 md:left-1/2 w-4 h-4 bg-phoenixOrange rounded-full transform -translate-x-1.5 md:-translate-x-2 shadow-[0_0_10px_rgba(224,90,22,1)]"></div>
                     <div class="glass-card p-6 rounded-xl md:w-[45%] ml-12 md:ml-0">
                         <span class="text-xs font-bold text-phoenixOrange uppercase">01. Juni 2026. – 28. Februar 2027.</span>
-                        <h4 class="text-lg font-bold text-white mt-1 mb-2">Prva Operativna Faza</h4>
+                        <h3 class="text-lg font-bold text-white mt-1 mb-2">Prva Operativna Faza</h4>
                         <p class="text-xs text-gray-400 leading-relaxed">Sistem balansira tri ključna stuba: Rewards, Vouchers i Staking. Svi depoziti direktno jačaju likvidnost nadolazećeg PXT Smart Contract-a na Base blockchainu (Avgust 2026).</p>
                     </div>
                 </div>
@@ -373,7 +388,7 @@
                     <div class="absolute left-4 md:left-1/2 w-4 h-4 bg-gray-600 rounded-full transform -translate-x-1.5 md:-translate-x-2"></div>
                     <div class="glass-card p-6 rounded-xl md:w-[45%] ml-12 md:ml-0">
                         <span class="text-xs font-bold text-gray-400 uppercase">Od 1.3.2027. nadalje</span>
-                        <h4 class="text-lg font-bold text-white mt-1 mb-2">Trajna Faza & Arbitražni Sistem</h4>
+                        <h3 class="text-lg font-bold text-white mt-1 mb-2">Trajna Faza & Arbitražni Sistem</h4>
                         <p class="text-xs text-gray-400 leading-relaxed">Otključava se opcija PRODAJE (SELL) tokena. Isplate prelaze u stabilni USDC, podržane naprednim 24/7 arbitražnim trejding serverima koji pokrivaju nagradne balanse.</p>
                     </div>
                 </div>
@@ -387,48 +402,64 @@
             <h2 class="text-3xl font-bold text-white mb-12 text-center">PXT Tokenomics</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="glass-card p-6 rounded-2xl border-t-4 border-green-500">
-                    <h4 class="text-white font-bold mb-2">BUY FEE: 2.7%</h4>
-                    <p class="text-xs text-gray-400">1.25% Donacije, 1.45% Marketing</p>
+                    <h3 class="text-white font-bold mb-2">KUPNJA: 2.7%</h4>
+                    <div class="text-xs text-gray-400 space-y-1">
+                        <p><span class="text-phoenixOrange font-semibold">1.45%</span> Donacije</p>
+                        <p><span class="text-phoenixOrange font-semibold">1.25%</span> Marketing i development</p>
+                    </div>
                 </div>
                 <div class="glass-card p-6 rounded-2xl border-t-4 border-red-500">
-                    <h4 class="text-white font-bold mb-2">SELL FEE: 5.4%</h4>
-                    <p class="text-xs text-gray-400">1.15% Donacije, 1.25% Marketing, 1.15% Burn, 1.85% Arbitraža</p>
+                    <h3 class="text-white font-bold mb-2">PRODAJA: 5.4%</h4>
+                    <div class="text-xs text-gray-400 space-y-1">
+                        <p><span class="text-phoenixOrange font-semibold">1.25%</span> Donacije</p>
+                        <p><span class="text-phoenixOrange font-semibold">1.15%</span> Marketing i development</p>
+                        <p><span class="text-phoenixOrange font-semibold">1.85%</span> Burn</p>
+                        <p><span class="text-phoenixOrange font-semibold">1.15%</span> Otkup</p>
+                    </div>
                 </div>
                 <div class="glass-card p-6 rounded-2xl border-t-4 border-yellow-500">
-                    <h4 class="text-white font-bold mb-2">PENALTY FEE: 37.8%</h4>
-                    <p class="text-xs text-gray-400">Primjenjuje se kod prodaje >10% stanja u 24h.</p>
+                    <h3 class="text-white font-bold mb-2">KAZNA: 37.8%</h4>
+                    <div class="text-xs text-gray-400 space-y-1">
+                        <p><span class="text-phoenixOrange font-semibold">1.25%</span> Donacije</p>
+                        <p><span class="text-phoenixOrange font-semibold">1.15%</span> Marketing i development</p>
+                        <p><span class="text-phoenixOrange font-semibold">1.85%</span> Burn</p>
+                        <p><span class="text-phoenixOrange font-semibold">33.55%</span> Otkup</p>
+                    </div>
                 </div>
                 <div class="glass-card p-6 rounded-2xl border-t-4 border-blue-500">
-                    <h4 class="text-white font-bold mb-2">TRANSFER: 2.7%</h4>
-                    <p class="text-xs text-gray-400">Transfer između novčanika bez limita.</p>
+                    <h3 class="text-white font-bold mb-2">TRANSFER: 2.7%</h4>
+                    <div class="text-xs text-gray-400 space-y-1">
+                        <p><span class="text-phoenixOrange font-semibold">1.45%</span> Donacije</p>
+                        <p><span class="text-phoenixOrange font-semibold">1.25%</span> Marketing i development</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SIGURNOST I ZAŠTITA -->
-    <section id="protection" class="py-24 bg-black/20">
+    <section id="security" class="py-24 bg-black/20">
         <div class="container mx-auto px-6 max-w-4xl">
             <h2 class="text-3xl font-bold text-white mb-12 text-center">Sigurnost i Zaštita</h2>
             <div class="space-y-4">
                 <div class="glass-card p-6 rounded-xl flex items-center gap-4">
-                    <i class="fa-solid fa-lock text-phoenixOrange text-2xl"></i>
+                    <svg width="32" height="32" class="w-8 h-8 text-phoenixOrange shrink-0" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25z"/></svg>
                     <div>
-                        <h4 class="text-white font-bold">Likvidnost & Vlasništvo</h4>
+                        <h3 class="text-white font-bold">Likvidnost & Vlasništvo</h4>
                         <p class="text-sm text-gray-400">Permanentno zaključana likvidnost i odricanje od vlasništva (Ownership Resignation) odmah nakon deploy-a.</p>
                     </div>
                 </div>
                 <div class="glass-card p-6 rounded-xl flex items-center gap-4">
-                    <i class="fa-solid fa-calendar-xmark text-phoenixOrange text-2xl"></i>
+                    <svg width="32" height="32" class="w-8 h-8 text-phoenixOrange shrink-0" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg>
                     <div>
-                        <h4 class="text-white font-bold">Prodaja (Sell Lock)</h4>
+                        <h3 class="text-white font-bold">Prodaja (Sell Lock)</h4>
                         <p class="text-sm text-gray-400">Opcija prodaje PXT tokena na mjenjačnicama je zaključana do <strong>1.3.2027.</strong></p>
                     </div>
                 </div>
                 <div class="glass-card p-6 rounded-xl flex items-center gap-4">
-                    <i class="fa-solid fa-code text-phoenixOrange text-2xl"></i>
+                    <svg width="32" height="32" class="w-8 h-8 text-phoenixOrange shrink-0" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
                     <div>
-                        <h4 class="text-white font-bold">Tehničke karakteristike</h4>
+                        <h3 class="text-white font-bold">Tehničke karakteristike</h4>
                         <p class="text-sm text-gray-400">Phoenix Token (PXT) je utility token baziran na <strong>Base blockchainu</strong>, lansiranje u augustu 2026.</p>
                     </div>
                 </div>
@@ -442,11 +473,11 @@
             <h2 class="text-3xl font-bold text-white mb-8 text-center">Affiliate Program</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="glass-card p-6 rounded-2xl">
-                    <h4 class="text-phoenixOrange font-bold mb-2">Direktna Zarada</h4>
+                    <h3 class="text-phoenixOrange font-bold mb-2">Direktna Zarada</h4>
                     <p class="text-sm text-gray-400">Za svaku novu ili obnovljenu Participation Share od tvog direktnog člana, dobivaš <strong>1 USD</strong> direktno u Reward Balance.</p>
                 </div>
                 <div class="glass-card p-6 rounded-2xl">
-                    <h4 class="text-phoenixOrange font-bold mb-2">Welcome Poklon</h4>
+                    <h3 class="text-phoenixOrange font-bold mb-2">Welcome Poklon</h4>
                     <p class="text-sm text-gray-400">Povećaj zajednicu poklanjanjem 1 do 10 paketa novim članovima. Odobri ih direktno putem svog Dashboard-a.</p>
                 </div>
             </div>
@@ -514,7 +545,7 @@
             <p class="text-gray-400 mb-8">
                 Transparentnost je naš glavni prioritet. Ne želimo da ulažeš novac u nešto što ne razumiješ. Zato smo kreirali kompletan edukativni sadržaj – od naših webinara, preko detaljnih tokenomics izvještaja, pa sve do direktne komunikacije putem Telegrama. Informisan član je najstabilniji član.
             </p>
-            <a href="https://t.me/PhoenixToken_Official_BALKAN" class="inline-block bg-white text-black font-bold px-8 py-3 rounded-xl hover:bg-phoenixOrange hover:text-white transition">
+            <a href="https://t.me/PhoenixProject_Official_BALKAN" class="inline-block bg-white text-black font-bold px-8 py-3 rounded-xl hover:bg-phoenixOrange hover:text-white transition">
                 Pridruži se zajednici
             </a>
         </div>
@@ -559,32 +590,35 @@
             content.classList.toggle('hidden');
             el.querySelector('span').innerText = content.classList.contains('hidden') ? '+' : '-';
         }
-    </script>
 
-    <!-- FOOTER -->
-    <footer class="bg-black/40 border-t border-white/5 py-12 text-center text-xs text-gray-500">
-        <div class="flex justify-center space-x-8 mb-8">
-            <a href="https://t.me/PhoenixToken_Official_BALKAN" target="_blank" class="flex flex-col items-center space-y-2 text-gray-400 hover:text-phoenixOrange transition">
-                <i class="fab fa-telegram fa-2x"></i>
-                <span class="text-[10px] uppercase font-bold">Telegram</span>
-            </a>
-            <a href="https://www.facebook.com/PhoenixTokenOfficial/" target="_blank" class="flex flex-col items-center space-y-2 text-gray-400 hover:text-phoenixOrange transition">
-                <i class="fab fa-facebook fa-2x"></i>
-                <span class="text-[10px] uppercase font-bold">Facebook</span>
-            </a>
-            <a href="https://www.youtube.com/@PhoenixTokenOfficial" target="_blank" class="flex flex-col items-center space-y-2 text-gray-400 hover:text-phoenixOrange transition">
-                <i class="fab fa-youtube fa-2x"></i>
-                <span class="text-[10px] uppercase font-bold">YouTube</span>
-            </a>
-        </div>
-        <div class="container mx-auto px-6 space-y-4">
-            <p class="text-gray-400 font-medium">PHOENIX TOKEN EKOSISTEM &copy; 2026. Sva prava zadržana.</p>
-            <p class="max-w-xl mx-auto text-[10px] leading-relaxed">Upozorenje o riziku: Trgovina kriptovalutama i učešće u digitalnim ekosistemima nosi finansijski rizik. Vrijednosti prikazane u USD su indikativnog karaktera do aktivacije pametnog ugovora.</p>
-        </div>
-    </footer>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIconOpen = document.getElementById('menuIconOpen');
+        const menuIconClose = document.getElementById('menuIconClose');
 
-    <!-- INTERAKTIVNA JS SKRIPTA ZA KALKULATOR -->
-    <script>
+        function closeMobileMenu() {
+            mobileMenu.classList.add('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            menuIconOpen.classList.remove('hidden');
+            menuIconClose.classList.add('hidden');
+        }
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            if (isOpen) {
+                closeMobileMenu();
+            } else {
+                mobileMenu.classList.remove('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', 'true');
+                menuIconOpen.classList.add('hidden');
+                menuIconClose.classList.remove('hidden');
+            }
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
         const shareInput = document.getElementById('shareCount');
         const calcInvest = document.getElementById('calcInvest');
         const calcDaily = document.getElementById('calcDaily');
@@ -595,9 +629,9 @@
             if (shares > 2000) { shares = 2000; shareInput.value = 2000; }
             if (shares < 0) { shares = 0; shareInput.value = 0; }
 
-            let investment = shares * 25;
-            let daily = shares * 0.50;
-            let monthly = daily * 30;
+            const investment = shares * 25;
+            const daily = shares * 0.50;
+            const monthly = daily * 30;
 
             calcInvest.innerText = `$${investment.toLocaleString()}`;
             calcDaily.innerText = `+$${daily.toFixed(2)}`;
@@ -605,14 +639,60 @@
         }
 
         shareInput.addEventListener('input', calculateProfit);
-        
-        // Automatski izračunaj pri učitavanju stranice
-        window.onload = calculateProfit;
+        calculateProfit();
+
+        const heroVideo = document.getElementById('heroVideo');
+        const videoPlayBtn = document.getElementById('videoPlayBtn');
+        let videoStarted = false;
+
+        function startVideo() {
+            if (videoStarted) return;
+            videoStarted = true;
+
+            if (!heroVideo.querySelector('source')) {
+                const source = document.createElement('source');
+                source.src = 'video-phoenix-token.mp4';
+                source.type = 'video/mp4';
+                heroVideo.appendChild(source);
+                heroVideo.load();
+            }
+            videoPlayBtn.classList.add('hidden');
+            heroVideo.setAttribute('loop', '');
+            heroVideo.play();
+        }
+
+        videoPlayBtn.addEventListener('click', startVideo);
+
+        // Auto-play after 3s so initial page load stays fast
+        setTimeout(startVideo, 3000);
     </script>
+
+    <!-- FOOTER -->
+    <footer class="bg-black/40 border-t border-white/5 py-12 text-center text-xs text-gray-400">
+        <div class="flex justify-center space-x-8 mb-8">
+            <a href="https://t.me/PhoenixProject_Official_BALKAN" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="flex flex-col items-center space-y-2 text-gray-300 hover:text-phoenixOrange transition">
+                <svg width="32" height="32" class="w-8 h-8" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                <span class="text-xs uppercase font-bold">Telegram</span>
+            </a>
+            <a href="https://www.facebook.com/ProjectPhoenixOfficial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="flex flex-col items-center space-y-2 text-gray-300 hover:text-phoenixOrange transition">
+                <svg width="32" height="32" class="w-8 h-8" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <span class="text-xs uppercase font-bold">Facebook</span>
+            </a>
+            <a href="https://www.youtube.com/@PhoenixProject_Official" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="flex flex-col items-center space-y-2 text-gray-300 hover:text-phoenixOrange transition">
+                <svg width="32" height="32" class="w-8 h-8" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <span class="text-xs uppercase font-bold">YouTube</span>
+            </a>
+        </div>
+        <div class="container mx-auto px-6 space-y-4">
+            <p class="text-gray-300 font-medium">PHOENIX PROJECT EKOSISTEM &copy; 2026. Sva prava zadržana.</p>
+            <p class="max-w-xl mx-auto text-xs leading-relaxed text-gray-400">Upozorenje o riziku: Trgovina kriptovalutama i učešće u digitalnim ekosistemima nosi finansijski rizik. Vrijednosti prikazane u USD su indikativnog karaktera do aktivacije pametnog ugovora.</p>
+        </div>
+    </footer>
+
 
     <!-- Ovo dugme će lebdeti na dnu samo na mobilnim uređajima -->
     <div class="md:hidden fixed bottom-6 left-6 right-6 z-50">
-        <a href="https://phoenixtoken.app/user/register" target="_blank" rel="noopener noreferrer" class="block w-full bg-phoenixOrange text-white font-bold py-4 rounded-2xl text-center shadow-2xl animate-bounce">
+        <a href="https://phoenixproject.io/user/register" target="_blank" rel="noopener noreferrer" class="block w-full bg-[#c94e12] hover:bg-[#a84310] text-white font-bold py-4 rounded-2xl text-center shadow-2xl animate-bounce">
             REGISTRUJ SE SADA
         </a>
     </div>
